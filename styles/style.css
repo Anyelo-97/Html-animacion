@@ -1,12 +1,17 @@
 
 .container{
-    width: 700px;
-    height: 400px;
+    width: 200px;
+    height: 300px;
     margin:auto;
-
+    background-image: url(../images/attachment-1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    animation: play 2s steps(6) infinite;
 }
 
-video{
-    height: 400px;
-    width: 700px;
+@keyframes play {
+    100% { background-position: 0px; }
+    100% { background-position: -1000px; }
 }
+
